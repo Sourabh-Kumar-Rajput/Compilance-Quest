@@ -1,0 +1,9 @@
+<template>
+    <lightning-input type="text" name="Full_Name" label="Full_Name" pattern="^[a-zA-Z]{3,25}{ }$" message-when-pattern-mismatch="Please enter valid name"></lightning-input>
+    <lightning-input typr="email" name="EmailAddress" label="EmailAddress" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$" message-when-pattern-mismatch="Please enter valid Email Id."></lightning-input>
+    <lightning-input type="date" name="DOB" label="Enter your DOB" ></lightning-input>
+    <lightning-input type="text" name="Aadhar_Number" label="Aadhar Number" maxlength="14" pattern="/^[2-9]{1}[0-9]{3}\s[0-9]{4}\s[0-9]{4}" message-when-pattern-mismatch="Please enter '-' after 4 digits."></lightning-input>
+    <lightning-input type="number" name="Mobile" label="Mobile Number" maxlength="10" pattern="^\d{4}[-]\d{4}[-]\d{4}$" message-when-pattern-mismatch="Please enter valid number."></lightning-input>
+    <lightning-radio-group name="Gender" label="Gender" options={options} value={value} type="radio"></lightning-radio-group>
+    <lightning-button variant="brand" label="Submit" title="Submit" onclick={handleClick} class="slds-m-left_x-small slds-m-top_x-large slds-m-bottom_xx-large"></lightning-button>
+</template>
